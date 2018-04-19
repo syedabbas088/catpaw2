@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  Word in Pieces
+
+  Created by Usman Ahmad on 12/11/13.
+  Copyright (c) 2013 Horizon Technology. All rights reserved.
+*/
+
+"Item 2" = "Play";
+"Item 3" = "Store";
+"Item 4" = "How to Play";
+"Item 5" = "Restore Purchases";
+"Item 6" = "Store";
+"Item 7" = "Coins";
+"Item 15" = "Tap anywhere to continue";
+"Item 16" = "Shuffle";
+"Item 19" = "Packs";
+"Item 20" = "Play";
+"Item 21" = "Level";
+"Item 22" = "lifelines";
+"Item 24" = "Reveal";
+"Item 27" = "OK";
+"Item 28" = "Cancel";
+"Item 29" = "Please tap on the Picture to get Help";
+"Item 34" = "Error!!!";
+"Item 35" = "Unable to connect to itunes store";
+"Item 36" = "Try Later";
+"Item 37" = "OK";
+"Item 38" = "Congratulations";
+"Item 39" = "Product Purchased successfully";
+"Item 40" = "Products Restored successfully";
+"Item 41" = "Alert!!!";
+"Item 42" = "You have already completed all levels of this Pack";
+"Item 43" = "Letter";
+"Item 44" = "Piece";
+"Item 45" = "Word";
+"Item 46" = "60";
+"Item 47" = "75";
+"Item 48" = "195";
+"Item 49" = "Yes";
+"Item 50" = "No";
+"Item 51" = "Do you want to unlock this Pack?";
+"Item 52" = "Do you want to Remove Unused Pieces for 100 Coins ?";
+"Item 53" = "You can not avail this facility right now.";
+"Item 54" = "You have Completed all Levels of this Pack";
+"Item 55" = "Please tap on the picture to get Help";
+"Item 56" = "Get Help";
+"Item 57" = "Unlock Pack";
+"Item 58" = "Remove Pieces";
+"Item 59" = "ORANGE";
+"Item 60" = "orange";
+"Item 61" = "Pick the Pieces in the right order to complete a word.";
+"Item 62" = "Tap on the pic to zoom the picture and to get hints.";
+"Item 63" = "How to Play";
+"Item 64" = "$0.99";
+"Item 65" = "$1.99";
+"Item 66" = "$4.99";
+"Item 67" = "$9.99";
+"Item 68" = "$19.99";
+"Item 69" = "$39.99";
+"Item 70" = "$0.99";
+"Item 71" = "FANTASTIC";
+"Item 72" = "AWESOME";
+"Item 73" = "BRILLIANT";
+"Item 74" = "WONDERFUL";
+"Item 75" = "OUTSTANDING";
+"Item 76" = "300";
+"Item 77" = "650";
+"Item 78" = "2500";
+"Item 79" = "7500";
+"Item 80" = "20,000";
+"Item 81" = "80,000";
+"Item 82" = "Remove Ads";
+"Item 83" = "You have earned";
+
+
+
+
+"Item 84" = "Disclaimer:All Images were either free to use or share, even commercially. Owners have copyrights of their respective images.";
+
+
+"Item 85" = "Rate";
+"Item 86" = "If you enjoy using @, would you mind taking a moment to rate it? It will take less than a minute. Thanks for your support!";
+"Item 87" = "No, Thanks";
+"Item 88" = "Remind me later";
+
+
+
+
+

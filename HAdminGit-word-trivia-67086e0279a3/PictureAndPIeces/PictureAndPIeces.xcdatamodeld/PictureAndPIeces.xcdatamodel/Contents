@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Level" representedClassName="Level" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="revealed_letters_list" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Reveal_Letters" syncable="YES"/>
+        <relationship name="words_list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Word" syncable="YES"/>
+    </entity>
+    <entity name="Mode" representedClassName="Mode" syncable="YES">
+        <attribute name="difficulty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isComplete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="levels_completed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tiles" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="levels_list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Level" syncable="YES"/>
+    </entity>
+    <entity name="Packs" representedClassName="Packs" syncable="YES">
+        <attribute name="current_level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current_level_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current_mode_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLocked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_levels" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="modes_list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mode" syncable="YES"/>
+    </entity>
+    <entity name="Reveal_Letters" representedClassName="Reveal_Letters" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLocked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Word" representedClassName="Word" syncable="YES">
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isGuessed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Level" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Mode" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Packs" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Reveal_Letters" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Word" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PacksViewController">
+            <connections>
+                <outlet property="MenuView" destination="4Bo-JE-asr" id="ztv-Va-IiB"/>
+                <outlet property="TabPointOne" destination="FXP-cf-a9I" id="mae-Mj-eSt"/>
+                <outlet property="TabPointTwo" destination="W10-fa-gQA" id="x7S-V9-bdt"/>
+                <outlet property="bottomBackImage_On_Hints_List" destination="BdK-iK-jkv" id="qYx-za-jJw"/>
+                <outlet property="btn05" destination="sH0-G8-DHc" id="cOB-W7-hAi"/>
+                <outlet property="btn1" destination="fGZ-O8-TXh" id="mmK-2q-FXg"/>
+                <outlet property="btn10" destination="1qC-II-Xgm" id="ATr-HC-Pp6"/>
+                <outlet property="btn11" destination="i9r-mP-RcW" id="W2I-em-UM5"/>
+                <outlet property="btn12" destination="yjG-j8-UbH" id="gBo-5a-0oc"/>
+                <outlet property="btn2" destination="nXP-Ua-f6Z" id="VSk-87-KUm"/>
+                <outlet property="btn3" destination="S50-TJ-pv4" id="Pfb-t7-ghW"/>
+                <outlet property="btn4" destination="CWh-Rh-eqm" id="ELc-BY-DG1"/>
+                <outlet property="btn5" destination="f5U-n7-Thh" id="7cU-yy-vva"/>
+                <outlet property="btn6" destination="bF3-O7-cTW" id="gGF-97-BYi"/>
+                <outlet property="btn7" destination="ShW-aT-hZU" id="IkG-8e-wEy"/>
+                <outlet property="btn8" destination="g4R-ox-rhW" id="Lcf-sf-Yga"/>
+                <outlet property="btn9" destination="qax-WZ-1cW" id="LQ6-AR-LTd"/>
+                <outlet property="btn_Close" destination="xUl-RU-Wek" id="YMy-zF-tWC"/>
+                <outlet property="btn_Free_Hints" destination="uF9-P1-3ga" id="ycW-kf-Viy"/>
+                <outlet property="btn_Hints" destination="xbV-en-zfz" id="xO9-F5-KHH"/>
+                <outlet property="btn_MyPacks" destination="t6U-ui-sHf" id="ERJ-XR-nnd"/>
+                <outlet property="btn_Quick_Play_On_Hints_List" destination="eiA-bk-z8L" id="U09-Ns-MF0"/>
+                <outlet property="btn_Settings_On_Hints_List" destination="HrW-iQ-3EI" id="gGh-uF-vQN"/>
+                <outlet property="hintsView" destination="BF2-RA-Qi3" id="lLu-Qy-42u"/>
+                <outlet property="menu_ActivityIndicator" destination="e6Q-iV-K7U" id="Qbi-Yy-Dgd"/>
+                <outlet property="myPacksView" destination="vBS-wP-kSZ" id="x0r-pK-EQf"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="4Bo-JE-asr">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crismes-bg.jpg" id="2ks-WY-GSD">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t6U-ui-sHf">
+                            <rect key="frame" x="64" y="124" width="320" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="my-packs.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clicked_MyPacks_Button:" destination="-1" eventType="touchUpInside" id="gS3-jh-59X"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xbV-en-zfz">
+                            <rect key="frame" x="384" y="124" width="320" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" backgroundImage="hints.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clicked_hints_Button:" destination="-1" eventType="touchUpInside" id="dvo-ah-Nt8"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab-point.png" id="FXP-cf-a9I">
+                            <rect key="frame" x="209" y="209" width="30" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab-point.png" id="W10-fa-gQA">
+                            <rect key="frame" x="529" y="209" width="30" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" id="vBS-wP-kSZ">
+                            <rect key="frame" x="64" y="224" width="640" height="819"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pack-bg.png" id="ndb-VE-Hig">
+                                    <rect key="frame" x="0.0" y="0.0" width="640" height="819"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom-fix-bar.png" id="VZv-PW-cns">
+                                    <rect key="frame" x="0.0" y="648" width="640" height="152"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ShW-aT-hZU">
+                                    <rect key="frame" x="0.0" y="0.0" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="0kj-r8-s6d"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g4R-ox-rhW">
+                                    <rect key="frame" x="0.0" y="108" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="w3o-In-ZMM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qax-WZ-1cW">
+                                    <rect key="frame" x="0.0" y="216" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="ODh-hm-H6N"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1qC-II-Xgm">
+                                    <rect key="frame" x="0.0" y="324" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="QQh-WE-JQk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i9r-mP-RcW">
+                                    <rect key="frame" x="0.0" y="432" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="de8-dm-9XV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yjG-j8-UbH">
+                                    <rect key="frame" x="0.0" y="540" width="640" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="lJl-ko-pwf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4444" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sIR-P2-qz2">
+                                    <rect key="frame" x="165" y="695" width="310" height="62"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" image="quick-play.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="ceH-9e-iDI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ti4-b0-KAQ">
+                                    <rect key="frame" x="47" y="691" width="69" height="69"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" image="setting-icon.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clicked_Settings_Button:" destination="-1" eventType="touchUpInside" id="OIu-Kw-8pC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="BF2-RA-Qi3">
+                            <rect key="frame" x="64" y="224" width="640" height="819"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom-fix-bar.png" id="BdK-iK-jkv">
+                                    <rect key="frame" x="0.0" y="651" width="640" height="152"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fGZ-O8-TXh">
+                                    <rect key="frame" x="0.0" y="0.0" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="5-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="GC7-ex-2aY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nXP-Ua-f6Z">
+                                    <rect key="frame" x="0.0" y="93" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="18-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="9Vb-mo-BPC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="S50-TJ-pv4">
+                                    <rect key="frame" x="0.0" y="186" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="40-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="bMc-ul-kui"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CWh-Rh-eqm">
+                                    <rect key="frame" x="0.0" y="279" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="300-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="WSZ-0X-sFM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f5U-n7-Thh">
+                                    <rect key="frame" x="0.0" y="372" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="1000-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="a9D-Vq-OIe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sH0-G8-DHc">
+                                    <rect key="frame" x="0.0" y="465" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="6000-hint.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="jxj-eE-eqm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bF3-O7-cTW">
+                                    <rect key="frame" x="0.0" y="558" width="640" height="93"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="no-ads.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="rib-8f-WHV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4444" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eiA-bk-z8L">
+                                    <rect key="frame" x="165" y="695" width="310" height="62"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" image="quick-play.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="inAppsHint:" destination="-1" eventType="touchUpInside" id="0HA-Zf-D51"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HrW-iQ-3EI">
+                                    <rect key="frame" x="47" y="691" width="69" height="69"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" image="setting-icon.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clicked_Settings_Button:" destination="-1" eventType="touchUpInside" id="oK4-l6-46G"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" id="e6Q-iV-K7U">
+                            <rect key="frame" x="365" y="494" width="37" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title-ipad.png" id="drk-m3-2ex">
+                            <rect key="frame" x="118" y="43" width="515" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xUl-RU-Wek">
+                            <rect key="frame" x="691" y="0.0" width="77" height="77"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" image="cross.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clicked_Close_Button:" destination="-1" eventType="touchUpInside" id="rSI-lg-kll"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uF9-P1-3ga">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+            <state key="normal" backgroundImage="get-hint.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="clicked_Get_Free_Hints:" destination="-1" eventType="touchUpInside" id="EG6-Fb-6yi"/>
+            </connections>
+        </button>
+    </objects>
+    <resources>
+        <image name="1000-hint.png" width="641" height="80"/>
+        <image name="18-hint.png" width="640" height="83"/>
+        <image name="300-hint.png" width="641" height="80"/>
+        <image name="40-hint.png" width="640" height="87"/>
+        <image name="5-hint.png" width="640" height="80"/>
+        <image name="6000-hint.png" width="641" height="80"/>
+        <image name="bottom-fix-bar.png" width="640" height="127"/>
+        <image name="crismes-bg.jpg" width="768" height="1053"/>
+        <image name="cross.png" width="76" height="76"/>
+        <image name="get-hint.png" width="640" height="104"/>
+        <image name="hints.png" width="320" height="112"/>
+        <image name="my-packs.png" width="320" height="112"/>
+        <image name="no-ads.png" width="640" height="86"/>
+        <image name="pack-bg.png" width="640" height="813"/>
+        <image name="quick-play.png" width="310" height="62"/>
+        <image name="setting-icon.png" width="68" height="68"/>
+        <image name="tab-point.png" width="25" height="15"/>
+        <image name="title-ipad.png" width="586" height="62"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

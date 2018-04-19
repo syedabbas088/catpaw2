@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9794C509-1586-4BD6-A9B0-A436FC606FF5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Word in Pieces</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>20045398796C82C2E25BC9C0AA6C89625BE92E7D</key>
+		<string>https://192.168.100.3/svn/words-maker</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Word in Pieces.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>20045398796C82C2E25BC9C0AA6C89625BE92E7D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/HAdminGit/word-trivia.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>20045398796C82C2E25BC9C0AA6C89625BE92E7D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>20045398796C82C2E25BC9C0AA6C89625BE92E7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>word-trivia</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>20045398796C82C2E25BC9C0AA6C89625BE92E7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>word-trivia</string>
+		</dict>
+	</array>
+</dict>
+</plist>

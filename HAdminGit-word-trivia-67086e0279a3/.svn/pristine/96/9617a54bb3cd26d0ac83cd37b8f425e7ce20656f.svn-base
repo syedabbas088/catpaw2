@@ -1,0 +1,119 @@
+#import "AppDelegate.h"
+
+@implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize ObjView = _ObjView;
+@synthesize navigationController = _navigationController;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [Tapjoy requestTapjoyConnect:@"cd928970-7dee-4603-891e-64c3c1a3c746" secretKey:@"POWDCIeomIT70Oli28r9" options:@{ TJC_OPTION_ENABLE_LOGGING : @(YES) } ];
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [[DataManager DataManagerSharedInstance] SetCurrentLanguage];
+    [self Load_Splash];
+    [self.window makeKeyAndVisible];
+    [self Integrate_Externals];
+    return YES;
+}
+-(void)Load_Splash
+{
+    SplashViewController *OBJ  = [[SplashViewController alloc] initWithNibName:@"SplashViewController" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:OBJ];
+    self.window.rootViewController = self.navigationController;
+    self.window.backgroundColor=[UIColor whiteColor];
+    
+    
+    
+    
+}
+
+-(void)Integrate_Externals
+{
+  //  [RevMobAds startSessionWithAppID:@"52a082ffa146d5415c00001d"];
+ //   [RevMobAds session].testingMode = RevMobAdsTestingModeOff;
+    
+    [Flurry setCrashReportingEnabled:YES];
+    [Flurry startSession:@"D836B95D6NBHRFQX9WBM"];
+   
+    [[DataManager DataManagerSharedInstance] FlurryCall:@"Application Launched"];
+    
+    
+    /*
+    [Appirater setAppId:@"771687177"];
+    [Appirater setDaysUntilPrompt:1];
+    [Appirater setUsesUntilPrompt:10];
+    [Appirater setSignificantEventsUntilPrompt:-1];
+    [Appirater setTimeBeforeReminding:2];
+    [Appirater setDebug:YES];
+     
+     */
+
+    
+    
+}
+-(void)Remove_Splash
+{
+    self.window.rootViewController = nil;
+    [self Load_Home];
+}
+-(void)Load_Home
+{
+    self.ObjView = [[PacksViewController alloc] initWithNibName:@"PacksViewController" bundle:nil];
+    self.ObjView.caseNumber = 1;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.ObjView];
+    self.window.rootViewController = self.navigationController;
+}
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    
+}
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    
+}
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    [[DataManager DataManagerSharedInstance] PostLanguageChangeNotification];
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    //[[DataManager DataManagerSharedInstance] Hide_Waiting_Alert];
+    
+//    Chartboost *cb = [Chartboost sharedChartboost];
+//    cb.appId = @"530f2efa2d42da3e6f4643c3";
+//    cb.appSignature = @"f2dc51dac0461ba178e02178fc6a6945dc757d9a";
+//    
+//    cb.delegate = self;
+//    
+//    [cb startSession];
+    
+}
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    [[DataManager DataManagerSharedInstance] saveContext];
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    [[[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please Close Some Apps, Available Memory Is Low" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+}
+
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    
+    // You can add your app-specific url handling code here if needed
+    
+    return wasHandled;
+}
+
+@end
